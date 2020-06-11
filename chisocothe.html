@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<script>
+    let weight=prompt('cannang?', '');
+    let height=prompt('chieucao', '');
+    let bmi=weight/(height*height);
+     if (bmi < 18) {
+         document.write("bmi:" + bmi + 'Underweight');
+     } else if (bmi < 25.0) {
+         document.write("bmi:" + bmi + 'Normal');
+     } else if (bmi < 30.0) {
+         document.write("bmi:" + bmi + 'Overweight');
+     } else {
+         document.write("bmi:" + bmi + 'Obese');
+     }
+</script>
+</body>
+</html>
