@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doyouloveve</title>
+</head>
+<body>
+<style>
+    #no{
+        position: absolute;
+        top: 200px;
+        left: 200px;
+    }
+</style>
+<div>
+    <p><b>Do you love me</b></p>
+    <input type="button" value="Yes">
+    <input type="button" value="No" id="no" onmouseover="changePos();">
+</div>
+<script>
+    function changePos() {
+        let seedx=Math.round(Math.random()*100);
+        let seedy=Math.round(Math.random()*100);
+        document.getElementById("no").style.left=seedx+"px";
+        document.getElementById("no").style.top=seedy+"px";
+    }
+</script>
+</body>
+</html>
